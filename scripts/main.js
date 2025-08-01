@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         suggestionsDiv.style.display = 'none';
         // resultMessage.textContent = '';
         // resultMessage.className = '';
-        resultMessage.classList.add("hidden");
+        resultMessage.className = 'hidden';
         blurOverlay.classList.remove("off");
         
         // Update queue indicator if in queue mode
@@ -78,14 +78,15 @@ document.addEventListener('DOMContentLoaded', async () => {
         const score = game.getScore();
 
         // Update UI with result
-        resultMessage.classList.add("shown");
+        console.log(resultMessage);
+        console.log(resultMessage.classList);
         blurOverlay.classList.add("off");
         if (result.isCorrect) {
             resultMessage.textContent = 'Correct!';
-            resultMessage.className = 'correct';
+            resultMessage.className = 'correct shown';
         } else {
             resultMessage.innerHTML = `It was ${result.correctName}`;
-            resultMessage.className = 'incorrect';
+            resultMessage.className = 'incorrect shown';
         }
 
         // Update score

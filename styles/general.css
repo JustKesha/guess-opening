@@ -154,21 +154,22 @@ span.extra {
 }
 
 #result-message {
-    margin-top: 20px;
     font-size: 1rem;
     min-height: 30px;
     width: 100%;
     transition-duration: .25s;
 }
 
+#result-message.shown {
+    margin-top: 20px;
+    opacity: 1;
+    height: auto;
+}
+
 #result-message.hidden {
+    margin-top: 0;
     opacity: 0;
 }
-
-#result-message.shown {
-    opacity: 1;
-}
-
 
 .correct {
     color: #4CAF50;
