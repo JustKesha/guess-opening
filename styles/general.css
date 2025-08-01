@@ -115,7 +115,7 @@ span.extra {
     position: absolute;
     width: 100%;
     max-width: 312px;
-    margin-top: 45px;
+    margin-top: 46px;
     max-width: 100vw;
     max-height: calc(35px * var(--suggestions-max-visible));
     overflow-y: auto;

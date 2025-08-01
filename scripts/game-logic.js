@@ -79,6 +79,6 @@ class Game {
 
     getVideoUrl() {
         if (!this.currentAnime?.openings?.length) return null;
-        return `https://www.youtube.com/embed/${this.currentAnime.openings[0]}?autoplay=1`;
+        return `https://www.youtube.com/embed/${this.currentAnime.openings[0]}?controls=0&rel=0&autoplay=0`;
     }
 }
