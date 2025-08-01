@@ -7,13 +7,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     const resultMessage = document.getElementById('result-message');
     const scoreDisplay = document.getElementById('score');
     const blurOverlay = document.getElementById('blur-overlay');
-    const queueIndicator = document.createElement('div');
+    const queueIndicator = document.getElementById('queue-indicator');
 
-    const skipDelaySec = 5;
+    const skipDelaySec = 7;
     const maxSuggestions = 25;
-
-    queueIndicator.className = 'queue-indicator';
-    document.querySelector('.game-ui').prepend(queueIndicator);
 
     // Game State
     let game;
@@ -68,7 +65,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         // Update queue indicator if in queue mode
         if (game.useQueue) {
             const remaining = game.animeQueue.length;
-            queueIndicator.textContent = `Custom queue: ${remaining + 1} remaining`;
+            queueIndicator.textContent = `Queue: ${remaining + 1} remaining`;
         }
     }
 
@@ -92,7 +89,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         }
 
         // Update score
-        scoreDisplay.textContent = `Score: ${score.correct}/${score.total} (${score.percentage}%)`;
+        scoreDisplay.innerHTML = `Guessed ${score.correct} out of ${score.total} <span class="extra"> or ${score.percentage}%</span>`;
 
         // Check if queue ended
         if (result.isQueueEmpty) {
