@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Opening</title>
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="game-container">
+        <div class="video-container">
+            <iframe id="opening-video" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            <div id="blur-overlay"></div>
+        </div>
+        
+        <div class="game-ui">
+            <div class="score-display">
+                <span id="score">Score: 0/0 (0%)</span>
+            </div>
+
+            <div class="guess-container">
+                <input type="text" id="guess-input" placeholder="Guess anime name">
+                <div id="suggestions"></div>
+                <button id="submit-guess">Submit</button>
+            </div>
+            
+            <div id="result-message"></div>
+        </div>
+    </div>
+    <script src="scripts/data-loader.js"></script>
+    <script src="scripts/game-logic.js"></script>
+    <script src="scripts/url-params.js"></script>
+    <script src="scripts/await-start.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
