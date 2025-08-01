@@ -8,7 +8,10 @@ document.addEventListener('DOMContentLoaded', async () => {
     const scoreDisplay = document.getElementById('score');
     const blurOverlay = document.getElementById('blur-overlay');
     const queueIndicator = document.createElement('div');
+
     const skipDelaySec = 5;
+    const maxSuggestions = 25;
+
     queueIndicator.className = 'queue-indicator';
     document.querySelector('.game-ui').prepend(queueIndicator);
 
@@ -111,7 +114,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         filteredSuggestions = animeList.filter(anime => 
             anime.name.toLowerCase().includes(input)
-        ).slice(0, 5);
+        ).slice(0, maxSuggestions);
 
         if (filteredSuggestions.length > 0) {
             suggestionsDiv.innerHTML = filteredSuggestions.map(anime => `
