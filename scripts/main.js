@@ -91,6 +91,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         // Update score
         scoreDisplay.innerHTML = `Guessed ${score.correct} out of ${score.total} <span class="extra"> or ${score.percentage}%</span>`;
+        suggestionsDiv.style.display = 'none';
 
         // Check if queue ended
         if (result.isQueueEmpty) {
