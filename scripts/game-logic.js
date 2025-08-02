@@ -79,6 +79,7 @@ class Game {
 
     getVideoUrl() {
         if (!this.currentAnime?.openings?.length) return null;
-        return `https://www.youtube.com/embed/${this.currentAnime.openings[0]}?controls=0&rel=0&autoplay=1`;
+        var ytOpeningID = this.currentAnime.openings[0];
+        return `https://www.youtube.com/embed/${ytOpeningID}?controls=0&rel=0&autoplay=1&loop=1&playlist=${ytOpeningID}`;
     }
 }
