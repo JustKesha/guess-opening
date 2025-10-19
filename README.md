@@ -11,6 +11,8 @@ Goto [justkesha.github.io/guess-opening](justkesha.github.io/guess-opening/)
 - Using YouTube's IFrame API for audio & blurred background
 - **Mobile support** thanks to responsive design
 
+<img width="36%" height="350px" alt="screenshot" src="preview/wrong.png" /> <img width="25%" height="350px" alt="screenshot" src="preview/ui.png" /> <img width="36%" height="350px" alt="screenshot" src="preview/correct.png" /> 
+
 > [!NOTE]
 > This idea was left on early in development and I currently don't plan on polishing it.<br>
 > The core funcionality is there if you wanna try it out, you might wanna click on the background to start.<br>
