@@ -18,6 +18,27 @@ Goto [justkesha.github.io/guess-opening](justkesha.github.io/guess-opening/)
 > The core funcionality is there if you wanna try it out, you might wanna click on the background to start.<br>
 > Some openings may not load as youtube blocks embeds for certain videos & I've not filtered those.
 
+### Data
+
 Openings list can be found in [this json](data/prod.json) file.<br>
 
 *Note: that IDs under the `openings` field are YT video IDs.*
+
+```json
+  ...
+  "R6t": {
+    "name": "Shinseiki Evangelion",
+    "episodes": 26,
+    "popularity": 68,
+    "year": 1995,
+    "openings": [
+      "fShlVhCfHig" // <- here is the opening video ID
+    ]
+  },
+  ...
+```
+
+So the video link would be:<br>
+https://www.youtube.com/watch?v=fShlVhCfHig
+
+or just https://youtu.be/fShlVhCfHig
