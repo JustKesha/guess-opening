@@ -1,9 +1,9 @@
-# [Guess Opening](justkesha.github.io/guess-opening/) by kesha
+# [Guess Opening](https://justkesha.github.io/guess-opening/) by kesha
 
 This is a simple web-application that tests your knowledge of anime openings.<br>
 The goal is to figure out the anime name by one of it's openings as fast as possible.
 
-Goto [justkesha.github.io/guess-opening](justkesha.github.io/guess-opening/)
+Goto [justkesha.github.io/guess-opening](https://justkesha.github.io/guess-opening/)
 
 ### Overview
 
